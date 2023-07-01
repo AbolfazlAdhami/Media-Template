@@ -59,4 +59,16 @@ a {
   text-decoration: none;
 }
 
- 
+/* slider Swipper */
+
+.swiper-wrapper {
+  width: 100vw !important;
+  height: fit-content;
+  overflow-x: visible;
+}
+.swiper-slide {
+  width: 40rem;
+  height: 40% !important;
+  font-size: 18px;
+  background: #fff;
+}

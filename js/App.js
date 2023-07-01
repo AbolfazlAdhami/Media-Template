@@ -7,12 +7,32 @@ menu_items.forEach((li) => {
   });
 });
 
-// const swiper = new Swiper(".swiper", {
-//   // Optional parameters
-//   direction: "vertical",
-//   loop: true,
-//   // Default parameters
-
- 
-// });
-// console.log(swiper);
+const swiper = new Swiper(".swiper", {
+  navigation: {
+    nextEl: "#next",
+    prevEl: "#back",
+  },
+  speed: 400,
+  spaceBetween: 100,
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 25,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    // when window width is >= 480px
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 25,
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});

@@ -43,7 +43,7 @@
 .main-nav .sub-nav {
   background-color: var(--white);
   width: 14rem;
-  border: solid 0.5px var(--black-2);
+
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   position: absolute;
   flex-direction: column;
@@ -110,7 +110,6 @@
   display: flex;
   flex-direction: row;
   z-index: 99;
-  border: 1px solid var(--black-2);
   padding: 0.5rem;
   display: none;
   overflow: hidden;
@@ -213,9 +212,9 @@
   position: relative;
   left: 0px;
   top: 0px;
-  border-radius: 24px;
-  background: url("../Asset/BG.png") no-repeat no-repeat;
-  background-size: cover;
+  border-radius: 3rem;
+  background: linear-gradient(97.49deg, #003d5c 1.28%, #024d6d 49.93%, #003d5c 106.23%);
+  color: var(--white);
   color: var(--white);
   text-align: center;
   font-family: "Aviny", sans-serif;
@@ -238,8 +237,8 @@
   position: relative;
 }
 .here-banner--text p {
-  font-size: 4rem;
-  font-weight: 5\ g00;
+  font-size: 4.2rem;
+  font-weight: 500;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .here-banner--text p::after {
@@ -363,7 +362,7 @@
   border-radius: 12px;
 }
 .countery .info img {
-  width: 5rem;
+  width: 8rem;
   border-radius: 1rem;
 }
 .countery .info .time {
