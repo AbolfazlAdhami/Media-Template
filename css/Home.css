@@ -215,7 +215,6 @@
   border-radius: 3rem;
   background: linear-gradient(97.49deg, #003d5c 1.28%, #024d6d 49.93%, #003d5c 106.23%);
   color: var(--white);
-  color: var(--white);
   text-align: center;
   font-family: "Aviny", sans-serif;
 }
@@ -282,6 +281,12 @@
   height: 20rem;
   width: 35rem;
   border-radius: 24px;
+}
+.news-card .news-icon--image {
+  width: 3rem;
+  height: 3rem;
+  top: 5%;
+  right: 5%;
 }
 .news-card .arrow-card {
   width: 3rem;
@@ -378,35 +383,46 @@
 }
 /* Note Section */
 
-.note .note-box .note-text {
-  margin-right: 6rem;
-}
-.note .heade-info {
+.note-box .heade-info {
   background-color: var(--primey-blue);
   border-radius: 0px 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-.note .note-box .note-text::after {
+.note-box .note-text::after {
   content: url("../Asset/Group.png");
   position: absolute;
-  top: -15px;
-  left: 10px;
+  top: 20%;
+  left: 25%;
 }
-.note .note-box .note-text::before {
+.note-box .note-text::before {
   content: url("../Asset/Group\ \(1\).png");
   position: absolute;
-  top: -15px;
-  right: -20px;
+  top: 25%;
+  right: 1%;
+}
+
+.note-text {
+  width: 75%;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 .note-box {
   background: #fcfcfc;
   box-shadow: 1px 1px 4px rgba(0, 61, 92, 0.14);
   border-radius: 16px;
+  height: 18rem;
 }
-
+.note-box--icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .author {
   position: absolute;
   left: 2%;
-  bottom: 3%;
+  bottom: 10%;
 }
 .avatar {
   width: 5rem;
@@ -451,8 +467,8 @@
 /* Contact us */
 .contact {
   height: 40rem;
-  background: url(../Asset/BG.png) no-repeat no-repeat;
-  background-size: cover;
+  background: linear-gradient(97.49deg, #003d5c 1.28%, #024d6d 49.93%, #003d5c 106.23%);
+
   border-radius: 24px;
 }
 .contact h4 {
@@ -483,8 +499,7 @@
 }
 /* questionbar section */
 .questionbar {
-  background: url("../Asset/BG.png") no-repeat;
-  background-size: cover;
+  background: linear-gradient(97.49deg, #003d5c 1.28%, #024d6d 49.93%, #003d5c 106.23%);
   margin: 10rem 0;
   border-radius: 24px;
 }
@@ -604,6 +619,26 @@ footer .social .home-btn img {
   footer .social .home-btn {
     position: absolute;
     top: 15px;
+  }
+
+  .note-box {
+    height: 25rem;
+  }
+  .author {
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
+  }
+  .note-text {
+    width: 90%;
+  }
+  .note-box .note-text::after {
+top: 16%;
+    left: 12%;
+  }
+  .note-box .note-text::before {
+    top: 16%;
+    right: 2%;
   }
 }
 

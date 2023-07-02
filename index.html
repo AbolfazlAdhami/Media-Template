@@ -363,7 +363,8 @@
     <section class="newest container my-5 d-flex flex-column align-items-start">
       <h2 class="fw-bold fs-1 p-3">مطلب روز</h2>
       <div class="news-box p-1 w-100 border-start border-bottom d-flex flex-column flex-md-row justify-content-evenly align-items-center gap-2">
-        <div class="news-card card p-2 border-0">
+        <div class="news-card card p-2 border-0 position-relative">
+          <img src="./Asset/news-icons/news.png" class="news-icon--image position-absolute rounded-0" alt="" />
           <img src="./Asset/images/news.jpg" class="card-img-top rounded-5" alt="..." />
           <div class="card-body">
             <h3 class="card-text fs-2 fw-bold text-start">تحریم‌های جدید آمریکا برای ورود مهاجران به کشور و تاثیر آن بر صنعت کاری</h3>
@@ -646,30 +647,33 @@
     </section>
     <!-- Note Section -->
 
-    <section class="note container my-5">
-      <div class="note-box w-100 pb-5 position-relative">
-        <div class="heade w-100 d-flex justify-content-between align-items-start">
-          <h5 class="heade-info d-inline text-center m-0 p-2 fs-3 text-light">یادداشت</h5>
-          <span class="d-flex flex-row-reverse align-items-center justify-content-start"><img src="./Asset/icons/Frame 72.svg" alt="" /> </span>
+    <section class="container my-5 mx-auto note-box p-5 position-relative">
+      <h5 class="heade-info d-inline text-center m-0 p-2 fs-3 text-light">یادداشت</h5>
+
+      <svg width="42" height="4" viewBox="0 0 42 4" fill="none" class="note-box--icon" xmlns="http://www.w3.org/2000/svg">
+        <rect width="4" height="4" rx="2" fill="#EEF1F2" />
+        <rect x="8" width="4" height="4" rx="2" fill="#EEF1F2" />
+        <rect x="16" width="4" height="4" rx="2" fill="#EEF1F2" />
+        <rect x="24" width="18" height="4" rx="2" fill="#0878AF" />
+      </svg>
+
+      <h4 class="note-text mt-5 text-start">
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+        نیاز و کاربردهای متنوع با هدف .............
+      </h4>
+      <div class="author d-flex gap-1 align-items-center">
+        <div class="avatar">
+          <img src="./Asset/avatar.jpg" alt="" />
         </div>
-        <p class="note-text w-50 fs-4 mt-5 align-self-start text-start fw-bold position-relative">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
-          مورد نیاز و کاربردهای متنوع با هدف .............
-        </p>
-        <div class="author d-flex gap-1 align-items-center">
-          <div class="avatar">
-            <img src="./Asset/avatar.jpg" alt="" />
-          </div>
-          <div class="d-flex flex-column fw-bold">
-            <h4>رضا سپهر</h4>
-            <p>کارشناس مهاجرت</p>
-          </div>
+        <div class="d-flex flex-column fw-bold">
+          <h4>رضا سپهر</h4>
+          <p>کارشناس مهاجرت</p>
         </div>
       </div>
     </section>
 
     <!-- Countery Section -->
-    <!-- <section class="counteries my-5 py-2 mx-auto container">
+    <section class="counteries my-5 py-2 mx-auto container">
       <div class="row gap-5">
         <div class="countery col p-0 shadow d-flex flex-column">
           <h4 class="w-100 p-4 py-4 fs-2 fw-bolder">کانادا</h4>
@@ -700,9 +704,8 @@
             </div>
           </div>
         </div>
- 
       </div>
-    </section> -->
+    </section>
 
     <!-- Videos Section -->
 
@@ -838,7 +841,7 @@
 
     <!-- Contact us -->
 
-    <!-- <section class="contact container my-5 mx-auto d-flex justify-content-center justify-content-md-start align-items-center position-relative">
+    <section class="contact container my-5 mx-auto d-flex justify-content-center justify-content-md-start align-items-center position-relative">
       <div class="container p-0 m-0 h-100 d-flex flex-column mx-5">
         <div class="description text-light">
           <h4 class="fs-1 my-3 fw-bold">با اشتراک در خبرنامه ما از آخرین اخبار مطلع شوید!</h4>
@@ -854,19 +857,19 @@
       <div class="contact-avatar">
         <img src="./Asset/contact.png" />
       </div>
-    </section> -->
+    </section>
     <!-- questionbar  -->
 
-    <!-- <section class="questionbar p-5 container mx-auto position-relative align-content-center">
+    <section class="questionbar p-2 p-md-5 container mx-auto position-relative align-content-center">
       <div class="row m-auto m-md-0 w-75 justify-content-around align-items-center gap-4">
-        <h3 class="text-light col-12 col-md-8 fs-2 fw-bold px-2">سوالی داری که نمیدونی و ذهنت رو درگیر کرده ! ما شما رو راهنمایی میکنیم</h3>
+        <h3 class="text-light col-12 col-md-8 fs-1 fw-bold px-2">سوالی داری که نمیدونی و ذهنت رو درگیر کرده ! ما شما رو راهنمایی میکنیم</h3>
         <button class="text-light w-auto h-auto col-12 col-md-4 p-4 fs-4 fw-medium ms-2 ms-lg-5">گرفتن راهنمایی</button>
       </div>
       <img src="./Asset/question.png" class="question-man" alt="" />
-    </section> -->
+    </section>
     <!-- Footer -->
 
-    <!-- <footer class="container-fluid mt-5 py-5">
+    <footer class="container-fluid mt-5 py-5">
       <div class="linkes w-100 row justify-content-between py-3">
         <nav class="box1 col fw-bold fs-4 d-flex justify-content-evenly flex-column flex-md-row align-items-start">
           <ul>
@@ -891,7 +894,7 @@
           </ul>
         </nav>
         <nav class="box2 col fw-bold fs-4 d-flex justify-content-evenly flex-column flex-md-row align-items-end">
-          <ul class="" style="">
+          <ul class="me-5 me-md-0">
             <li class="my-2">
               <h4 class="fw-bolder">درباره ما</h4>
             </li>
@@ -902,14 +905,14 @@
             <li class="my-2"><a href="">ویدئوها</a></li>
           </ul>
           <ul>
-            <li>
+            <li class="my-2">
               <h4 class="fw-bolder">همکاری با ما</h4>
             </li>
-            <li>
+            <li class="my-2">
               <a href="">همکاری و تبلیغات</a>
             </li>
-            <li><a href="">کمک مالی </a></li>
-            <li><a href="">فرصت های شغلی</a></li>
+            <li class="my-2"><a href="">کمک مالی </a></li>
+            <li class="my-2"><a href="">فرصت های شغلی</a></li>
           </ul>
         </nav>
       </div>
@@ -929,9 +932,9 @@
           <img src="./Asset/icons/Arrow.svg" alt="" />
         </button>
       </div>
-    </footer> -->
+    </footer>
 
-    <!-- <div class="mb-auto text-light liesense">تمام حقوق مادی و معنوی این سایت متعلق به مدیا مهاجرت میباشد</div> -->
+    <div class="mb-auto text-light liesense">تمام حقوق مادی و معنوی این سایت متعلق به مدیا مهاجرت میباشد</div>
   </body>
 
   <script src="./css/Bootstrap/js/bootstrap.min.js"></script>
