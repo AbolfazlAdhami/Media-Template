@@ -1,0 +1,61 @@
+header {
+  height: 500px;
+  border-radius: 0 0 109px 109px;
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  background-blend-mode: hard-light;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 90;
+}
+.navbar {
+  z-index: 99;
+}
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: radial-gradient(421.04% 75.72% at 53.08% 58.88%, #003d5c 0%, #024d6d 46.35%, #003d5c 100%);
+  background-blend-mode: hard-light;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 109px 109px;
+  z-index: 91;
+}
+header .icons-box {
+  position: absolute;
+  top: 20%;
+  left: 38%;
+  z-index: 95;
+}
+
+.swicher button {
+  background-color: transparent;
+}
+.swicher .devider {
+  background: radial-gradient(2041146.63% 8399.92% at 50% 49.97%, #000 0%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+  height: 2px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.swicher .swicher-box.hide {
+  opacity: 0.5;
+}
+
+.favorite {
+  transform: translateX(100%);
+  transition: all ease 0.5s;
+}
+
+.favorite.show {
+  transform: translateX(0%);
+  transition: all ease 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+  header .icons-box {
+    top: 20%;
+    left: 20%;
+  }
+}
