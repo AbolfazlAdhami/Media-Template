@@ -270,14 +270,17 @@
     </header>
     <!-- Swicher -->
     <div class="swicher container w-100 my-5 d-flex align-items-center justify-content-around px-3">
-      <span id="favorite" class="swicher-box w-25 d-flex flex-column justify-content-center">
-        <button class="p-2 fs-2 fw-bold">مورد علاقه ها</button>
-        <div class="devider"></div>
-      </span>
-      <span id="bookmark" class="swicher-box hide w-25 d-flex flex-column justify-content-center">
-        <button class="p-2 fs-2 fw-bold">بعدا بخوانید</button>
-        <div class="devider"></div>
-      </span>
+      <ul class="nav w-100 justify-content-between">
+        <li class="nav-item swicher-box nav-item w-25 d-flex flex-column justify-content-center">
+          <button class="p-2 fs-2 fw-bold">مورد علاقه ها</button>
+          <div class="devider"></div>
+        </li>
+
+        <li class="nav-item swicher-box hide w-25 d-flex flex-column justify-content-center">
+          <button class="p-2 fs-2 fw-bold">بعدا بخوانید</button>
+          <div class="devider"></div>
+        </li>
+      </ul>
     </div>
     <div class="favorite">
       <!-- News Section -->
@@ -604,16 +607,16 @@
     const favPage = document.querySelector(".favorite");
     const bookPage = document.querySelector(".bookmark");
 
-    favBtn.addEventListener("click", () => {
-      console.log(bookPage);
-      if (!favPage.classList.contains("show")) {
-        favPage.classList.add("show");
-        favBtn.classList.toggle("hide");
-        bookPage.classList.remove("show");
-        return;
-      }
-      favPage.classList.remove("show");
-      bookPage.classList.add("show");
-    });
+    // favBtn.addEventListener("click", () => {
+    //   console.log(bookPage);
+    //   if (!favPage.classList.contains("show")) {
+    //     favPage.classList.add("show");
+    //     favBtn.classList.toggle("hide");
+    //     bookPage.classList.remove("show");
+    //     return;
+    //   }
+    //   favPage.classList.remove("show");
+    //   bookPage.classList.add("show");
+    // });
   </script>
 </html>

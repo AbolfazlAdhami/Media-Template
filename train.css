@@ -43,7 +43,7 @@ header .icons-box {
   opacity: 0.5;
 }
 
-.favorite {
+/* .favorite {
   transform: translateX(100%);
   transition: all ease 0.5s;
 }
@@ -58,4 +58,4 @@ header .icons-box {
     top: 20%;
     left: 20%;
   }
-}
+} */
