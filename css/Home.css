@@ -213,7 +213,12 @@
   left: 0px;
   top: 0px;
   border-radius: 3rem;
-  background: linear-gradient(97.49deg, #003d5c 1.28%, #024d6d 49.93%, #003d5c 106.23%);
+  background: linear-gradient(
+    97.49deg,
+    #003d5c 1.28%,
+    #024d6d 49.93%,
+    #003d5c 106.23%
+  );
   color: var(--white);
   text-align: center;
   font-family: "Aviny", sans-serif;
@@ -467,7 +472,12 @@
 /* Contact us */
 .contact {
   height: 40rem;
-  background: linear-gradient(97.49deg, #003d5c 1.28%, #024d6d 49.93%, #003d5c 106.23%);
+  background: linear-gradient(
+    97.49deg,
+    #003d5c 1.28%,
+    #024d6d 49.93%,
+    #003d5c 106.23%
+  );
 
   border-radius: 24px;
 }
@@ -500,7 +510,12 @@
 }
 /* questionbar section */
 .questionbar {
-  background: linear-gradient(97.49deg, #003d5c 1.28%, #024d6d 49.93%, #003d5c 106.23%);
+  background: linear-gradient(
+    97.49deg,
+    #003d5c 1.28%,
+    #024d6d 49.93%,
+    #003d5c 106.23%
+  );
   margin: 10rem 0;
   border-radius: 24px;
 }
@@ -668,7 +683,7 @@ footer .social .home-btn img {
   .icons-box {
     bottom: 4%;
   }
- 
+
   .countery .info {
     height: 12rem;
   }

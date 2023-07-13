@@ -36,3 +36,6 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
+
+
+const newsSlider = new Swiper(".news", {});
