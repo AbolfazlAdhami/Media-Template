@@ -37,5 +37,13 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+const newsSwiper = new Swiper("#news", {
+  navigation: {
+    nextEl: "#next",
+    prevEl: "#back",
+  },
+  speed: 400,
+ 
 
-const newsSlider = new Swiper(".news", {});
+
+});
