@@ -43,7 +43,5 @@ const newsSwiper = new Swiper("#news", {
     prevEl: "#back",
   },
   speed: 400,
- 
-
-
+  spaceBetween: 25,
 });
