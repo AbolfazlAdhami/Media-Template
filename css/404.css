@@ -1,0 +1,31 @@
+:root {
+  --mian-bg: #fdfeff;
+  --primey-blue: #0878af;
+  --gary: #eef1f2;
+  --white: #fafafa;
+  --black: #0f1010;
+  --black-2: #000000;
+}
+
+.icon-404 img {
+  width: 32rem;
+  object-fit: cover;
+}
+
+section button {
+  background-color: var(--primey-blue);
+  border-radius: 12px;
+  padding: 12px 20px;
+}
+section p {
+  width: 50%;
+}
+@media only screen and (max-width: 576px) {
+  .icon-404 img {
+    width: 24rem;
+    object-fit: cover;
+  }
+  section p {
+        width: auto;
+      }
+}
