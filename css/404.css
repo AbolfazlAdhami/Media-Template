@@ -20,12 +20,19 @@ section button {
 section p {
   width: 50%;
 }
+
+.cate div {
+  width: 50%;
+}
 @media only screen and (max-width: 576px) {
   .icon-404 img {
     width: 24rem;
     object-fit: cover;
   }
   section p {
-        width: auto;
-      }
+    width: auto;
+  }
+  .cate div {
+    width: 100%;
+  }
 }
