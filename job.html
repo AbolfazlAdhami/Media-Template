@@ -433,8 +433,8 @@
                         <span class="fs-3 fw-bold text-secondary"> نوع وظیفه :<h3 class="d-inline text-black p-1 fs-3 fw-bold">شغل پاره وقت</h3></span>
                         <span class="fs-3 fw-bold text-secondary"> موقعیت:<h3 class="d-inline text-black p-1 fs-3 fw-bold">تهران،تهران</h3></span>
                         <span class="fs-3 fw-bold text-secondary"> از راه دور:<h3 class="d-inline text-black p-1 fs-3 fw-bold">بلی</h3></span>
-                        <button class="btn btn-primary align-self-center w-100 text-center ">
-                                <a href="" class="text-light fs-3 fw-bold ">اکنون درخواست دهید</a>
+                        <button class="btn btn-primary align-self-center w-100 text-center  text-light fs-3 fw-bold" data-bs-toggle="modal" data-bs-target="#jobModal">
+                                اکنون درخواست دهید 
                         </button>
                 </div>
         </div>
@@ -475,10 +475,10 @@
 </li>
 
                 </ul>
-                <button class="btn btn-primary  fs-3  fw-bold text-light">
-                        <a href="">
+                <button class="btn btn-primary col col-md-3  p-2 mt-5 fs-3  fw-bold text-light" data-bs-toggle="modal" data-bs-target="#jobModal">
+                        
                                 اکنون درخواست دهید
-                        </a>
+                        
                 </button>
         </div>
   </section>
@@ -570,7 +570,45 @@
 
 
 
+ <!-- Modal -->
+<!-- Modal -->
+<div class="modal modal-lg  fade" id="jobModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog   rounded-5">
+          <div class="modal-content bg-light">
+                  <div class="modal-body container-fluid d-flex flex-column justify-content-between align-items-center p-4">
+                        <span class="fs-3 fw-bold text-secondary text-center">
+                                درخواست برای
+                                <h1 class="d-inline fs-3 fw-bold text-black">طراح محصول</h1>
+                                <form action="" class=" my-5 px-4 px-sm-0">
+                                        <div class="row justify-content-between gap-3">
+                                          <input type="text" class="col-sm-5 rounded-4  bg-body col-12 bg-light p-3 text-black fs-4 fw-bold"  placeholder="نام">
+                                          <input type="text" class="col-sm-5  rounded-4 bg-body col-12 bg-light p-3 text-black fs-4 fw-bold"  placeholder="ایمیل">
+                                          <input id="file"  type="file" class="d-none">
+                                          <label for="file" class="col-12 bg-body p-3 d-flex align-items-center flex-column " >
+                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 10.875C18.6213 10.875 19.125 11.3787 19.125 12V16.875H24C24.6213 16.875 25.125 17.3787 25.125 18C25.125 18.6213 24.6213 19.125 24 19.125H19.125V24C19.125 24.6213 18.6213 25.125 18 25.125C17.3787 25.125 16.875 24.6213 16.875 24V19.125H12C11.3787 19.125 10.875 18.6213 10.875 18C10.875 17.3787 11.3787 16.875 12 16.875H16.875V12C16.875 11.3787 17.3787 10.875 18 10.875Z" fill="#0878AF"/>
+                                                        </svg>
+                                                        <span>
+                                                                cv  خود را اضافه نمایید
+                                                        </span>
+
+                                                        
+                                        </label>
+                                            <textarea name="question" id="" cols="30" rows="10"  class="bg-body text-black fs-4 fw-bold p-3 rounded-4 text-start "  placeholder="درباره خود برای ما بگویید"></textarea>
+                                        </div> 
  
+                                </form>
+                      
+                        </span>
+             
+                    
+                          
+                          <button type="button" class="btn btn-primary fs-3 fw-bold px-3 py-2 fw-bold align-self-md-end align-self-center " data-bs-dismiss="modal">ارسال درخواست</button>
+                </div>
+             
+          </div>
+        </div>
+      </div>
  
 </body>
 <style>
@@ -578,6 +616,17 @@
                 content: "-";
                 padding: 0.5rem;
         }
+      
+  form input,textarea{
+    transition: all ease 0.1s;
+  }
+  form input:focus,textarea:focus{
+   border: 0.1px solid  #0878AF;
+  }
+  textarea{
+    resize: none;
+  }
+ 
 </style>
 <script src="./css/Bootstrap/js/bootstrap.min.js"></script>
 <script src="./js/swiper-bundle.min.js" mu></script>

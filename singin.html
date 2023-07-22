@@ -18,7 +18,7 @@
 <body>
 
 <section class="container-fluid   d-flex   justify-content-center align-items-center">
-<form action="" class="d-flex flex-column  justify-content-around p-3">
+<form action="" class="d-flex flex-column  bg-white justify-content-start gap-3 p-4">
         <a href="/" class="logo d-flex align-items-center justify-content-center gap-2">
                 <img src="./Asset/Logo.PNG" alt="" />
                 <span>مدیامهاجرت</span>
@@ -27,11 +27,11 @@
 
                 <h4 class="fs-2 fw-bolder">دوباره خوش آمدی!</h4>
                 <span class="fs-4 fw-medium">
-                        هنوز حساب ایجاد نکردید؟
+                        قبلا حساب ایحاد کردید؟
                         <a href="./singup.html">ورود</a>
                 </span>
         </div>
-        <div class="input-box">
+        <div class="input-box container-fluid gap-3">
                 <button class="w-100  p-2 btn border-secondary rounded-3
                 ">
                         <a href="" class="fs-3 text-black fw-bold">
@@ -49,13 +49,23 @@
                         </a>
 
                 </button>
-                <div>
+                <div class="devider row d-flex  align-items-center justify-content-center my-4 ">
+                        <span  class="bg-secondary col-5 opacity-50 " style="height: 1px;"></span>
+                        <span class="fs-3 col-1 fw-bold text-secondary">
 
-                        یا
+                                یا
+                        </span>
+                        <span   class="bg-secondary col-5 opacity-50 " style="height: 1px;"></span>
                 </div>
-                <div>
-                        <input type="text"  class="" placeholder="">
-                </div>
+                
+                        <input type="email"  class="col-12 my-3 bg-light p-4 rounded-4 text-start text-black fs-4 fw-bold" placeholder="آدرس ایمیل">
+                        <input type="tel"  class="col-12 my-3 bg-light p-4 rounded-4 text-start text-black fs-4 fw-bold" placeholder="شماره موبایل">
+                        <input type="password"  class="col-12 my-3 bg-light p-4 rounded-4 text-start text-black fs-4 fw-bold" placeholder="رمز عبور">
+                        <button class="btn btn-primary fs-4 fw-bold text-light w-100 p-3">
+ایجاد حساب کاربری
+                        </button>
+
+                 
         </div>
 </form>
 </section>
@@ -63,6 +73,17 @@
  
         
 </body>
+<style>
+        form input,textarea{
+          transition: all ease 0.1s;
+        }
+        form input:focus,textarea:focus{
+         border: 0.1px solid  #0878AF;
+        }
+        textarea{
+          resize: none;
+        }
+       </style>
 <script src="./css/Bootstrap/js/bootstrap.min.js"></script>
 <script src="./js/swiper-bundle.min.js" mu></script>
 <script src="./js/App.js"></script>
