@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./css/rest.css" />
   <link rel="stylesheet" href="./css/Home.css" />
  
-  <title>bookmark</title>
+  <title>favorite</title>
 </head>
 
 <body>
@@ -264,30 +264,28 @@
   <!-- Swicher -->
   <div class="swicher container w-100 my-5 d-flex align-items-center justify-content-around px-3">
     <ul class="nav w-100 justify-content-between">
-      <li class="nav-item swicher-box hide
-       nav-item w-25 d-flex flex-column justify-content-center">
-        <button class="p-2 fs-2 fw-bold" onclick="window.location.href='./liked.html'">مورد علاقه ها</button>
+      <li class="nav-item swicher-box nav-item w-25 d-flex flex-column justify-content-center">
+        <button class="p-2 fs-2 fw-bold" onclick="window.location.href='#'">مورد علاقه ها</button>
         <div class="devider"></div>
       </li>
 
-      <li class="nav-item swicher-box  w-25 d-flex flex-column justify-content-center">
-        <button class="p-2 fs-2 fw-bold" onclick="window.location.href='#'">بعدا بخوانید</button>
+      <li class="nav-item swicher-box hide w-25 d-flex flex-column justify-content-center">
+        <button class="p-2 fs-2 fw-bold" onclick="window.location.href='./bookmark.html'">بعدا بخوانید</button>
         <div class="devider"></div>
       </li>
     </ul>
   </div>
-  <div class="bookmark row justify-content-center px-5 align-items-center h-100">
+  <div class="favorite row justify-content-center px-5 align-items-center h-100">
  
-         <!-- if Empety -->
-         <div class="col-4 object-fit-cover">
-          <img src="./Asset/bookmark.png" class="w-100 " alt="">
-  </div>
- 
+        <!-- if Empety -->
+                <div class="col-4 object-fit-cover">
+                        <img src="./Asset/favorite.png" class="w-100 " alt="">
+                </div>
   </div>
 
   <!-- Footer -->
 
-  <footer class="container-fluid mt-5 py-5">
+  <footer class="container-fluid  mt-5 py-5">
     <div class="linkes w-100 row justify-content-between py-3">
       <nav class="box1 col fw-bold fs-4 d-flex justify-content-evenly flex-column flex-md-row align-items-start">
         <ul>
@@ -359,8 +357,8 @@
 <script src="./css/Bootstrap/js/bootstrap.min.js"></script>
 <script src="./js/swiper-bundle.min.js" mu></script>
 <script src="./js/App.js"></script>
-<script></script>
- <style>
+ 
+<style>
   header {
   height: 500px;
   border-radius: 0 0 109px 109px;
@@ -387,10 +385,6 @@
   opacity: 0.5;
 }
  
-html{
-  scroll-behavior: smooth;
-  scroll-margin-top: 10rem;
-}
 @media only screen and (max-width: 768px) {
  header{
   height: 450px;
@@ -399,13 +393,3 @@ html{
   
 </style>
 </html>
-   
-  
-
-
-
- 
-
-
-
- 
