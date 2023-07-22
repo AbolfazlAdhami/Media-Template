@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./css/rest.css" />
   <link rel="stylesheet" href="./css/Home.css" />
   <link rel="stylesheet" href="./css/train.css" />
-  <title>bookmark</title>
+  <title>train</title>
 </head>
 
 <body>
@@ -612,6 +612,25 @@
   </footer>
 
   <div class="text-light liesense">تمام حقوق مادی و معنوی این سایت متعلق به مدیا مهاجرت میباشد</div>
+
+
+    <!-- Modal -->
+    <div class="modal  fade bg-transparent  " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog container-fluid   bg-transparent  modal-lg">
+        <div class="modal-content    rounded-0 row bg-transparent flex-row-reverse align-items-center justify-content-between  "  >
+           
+            <label for="search" class="col-1 ">
+              <svg width="32"  height="32" class="p-0 m-0" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M35.4728 33.5276L28.431 26.4857C31.1005 23.3152 32.4424 19.2362 32.1765 15.1C31.9107 10.9639 30.0577 7.0902 27.0043 4.28752C23.9508 1.48483 19.933 -0.0302978 15.7892 0.0583709C11.6455 0.147039 7.69608 1.83265 4.76534 4.76339C1.8346 7.69413 0.148993 11.6435 0.060324 15.7873C-0.0283446 19.931 1.48678 23.9489 4.28947 27.0023C7.09216 30.0557 10.9658 31.9087 15.102 32.1746C19.2381 32.4404 23.3172 31.0986 26.4877 28.4291L33.5295 35.4709C33.7902 35.7138 34.1349 35.846 34.4911 35.8397C34.8474 35.8334 35.1872 35.6891 35.4391 35.4372C35.6911 35.1853 35.8354 34.8454 35.8417 34.4892C35.8479 34.133 35.7157 33.7882 35.4728 33.5276ZM2.87618 16.1659C2.87618 13.537 3.65572 10.9672 5.11623 8.78144C6.57673 6.59563 8.65261 4.89201 11.0813 3.88599C13.5101 2.87998 16.1826 2.61676 18.7609 3.12962C21.3392 3.64248 23.7076 4.90839 25.5665 6.76726C27.4253 8.62614 28.6912 10.9945 29.2041 13.5728C29.717 16.1511 29.4538 18.8237 28.4477 21.2524C27.4417 23.6811 25.7381 25.757 23.5523 27.2175C21.3665 28.678 18.7967 29.4576 16.1678 29.4576C12.6439 29.4537 9.26533 28.0521 6.7735 25.5602C4.28167 23.0684 2.88006 19.6899 2.87618 16.1659Z" fill="#FCFCFC"/>
+                </svg>
+                
+            </label>
+            <input  class="col-9 bg-transparent text-center  fs-3 p-3 fw-bold text-light" placeholder="جستجو خبر، مقاله،ویدیو..." id="type" type="search">
+           
+        </div>
+      </div>
+    </div>
+   
 </body>
 
 <script src="./css/Bootstrap/js/bootstrap.min.js"></script>
@@ -636,4 +655,42 @@
     // });
 </script>
 
+<style>
+  header {
+  height: 500px;
+  border-radius: 0 0 109px 109px;
+  background: radial-gradient(421.04% 75.72% at 53.08% 58.88%, rgba(0, 61, 92,0.5) 0%, rgba(2, 78, 110,0.5) 46.35%, rgba(0, 61, 92, 0.5) 100%);
+ 
+  position: relative;
+  z-index: 90;
+}
+.navbar {
+  z-index: 99;
+}
+ 
+.swicher button {
+  background-color: transparent;
+}
+.swicher .devider {
+  background: radial-gradient(2041146.63% 8399.92% at 50% 49.97%, #000 0%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+  height: 2px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.swicher .swicher-box.hide {
+  opacity: 0.5;
+}
+ 
+html{
+  scroll-behavior: smooth;
+  scroll-margin-top: 10rem;
+}
+@media only screen and (max-width: 768px) {
+ header{
+  height: 450px;
+ }
+}  
+  
+</style>
 </html>
