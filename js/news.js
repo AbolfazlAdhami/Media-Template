@@ -1,6 +1,6 @@
 const nextBtn = document.querySelector("#next");
 const backBtn = document.querySelector("#back");
-console.log(backBtn, nextBtn);
+ 
 const lableSwiper = new Swiper("#lable", {
   navigation: {
     nextEl: nextBtn,
