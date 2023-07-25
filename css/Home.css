@@ -517,9 +517,9 @@ body {
   font-family: "Aviny";
   font-size: 4rem;
 }
-.contact .ques-box input {
+.contact .ques-box   {
   background: rgba(1, 28, 41, 1);
-  width: 80%;
+  
 }
 .contact .container {
   width: 50%;
@@ -527,6 +527,7 @@ body {
 }
 .contact .ques-box button {
   background: #0878af;
+  left: 0%;
 }
 .contact-avatar {
   position: absolute;
@@ -602,6 +603,10 @@ footer .social .home-btn img {
   text-align: center;
   margin-bottom: -2rem;
 }
+
+
+
+
 /* Modal Styles */
 
 

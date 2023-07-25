@@ -413,30 +413,38 @@
         <p class="fs-3 fw-bold text-center">
                 نتایج جستجو برای:
         </p>
-        <label for="search" class="search-box w-75 position-relative">
-                <img src="./Asset/icons/search 3/search.svg" class="position-absolute " alt="">
+        <label for="search" class="search-box  position-relative">
+          <svg width="24" height="24" class="position-absolute binoculars-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M35.4728 33.5276L28.431 26.4857C31.1005 23.3152 32.4424 19.2362 32.1765 15.1C31.9107 10.9639 30.0577 7.0902 27.0043 4.28752C23.9508 1.48483 19.933 -0.0302978 15.7892 0.0583709C11.6455 0.147039 7.69608 1.83265 4.76534 4.76339C1.8346 7.69413 0.148993 11.6435 0.060324 15.7873C-0.0283446 19.931 1.48678 23.9489 4.28947 27.0023C7.09216 30.0557 10.9658 31.9087 15.102 32.1746C19.2381 32.4404 23.3172 31.0986 26.4877 28.4291L33.5295 35.4709C33.7902 35.7138 34.1349 35.846 34.4911 35.8397C34.8474 35.8334 35.1872 35.6891 35.4391 35.4372C35.6911 35.1853 35.8354 34.8454 35.8417 34.4892C35.8479 34.133 35.7157 33.7882 35.4728 33.5276ZM2.87618 16.1659C2.87618 13.537 3.65572 10.9672 5.11623 8.78144C6.57673 6.59563 8.65261 4.89201 11.0813 3.88599C13.5101 2.87998 16.1826 2.61676 18.7609 3.12962C21.3392 3.64248 23.7076 4.90839 25.5665 6.76726C27.4253 8.62614 28.6912 10.9945 29.2041 13.5728C29.717 16.1511 29.4538 18.8237 28.4477 21.2524C27.4417 23.6811 25.7381 25.757 23.5523 27.2175C21.3665 28.678 18.7967 29.4576 16.1678 29.4576C12.6439 29.4537 9.26533 28.0521 6.7735 25.5602C4.28167 23.0684 2.88006 19.6899 2.87618 16.1659Z" fill="#000"/>
+            </svg>
+            
                 <input id="search" type="text" class="rounded-4 w-100 p-3 fs-4 fw-bold text-black bg-light" value="مهاجرت به امریکا">
         </label>
  </div>
-  <section class="cate container my-5 d-flex flex-column-reverse flex-sm-row gap-4 justify-content-between  align-items-start align-items-sm-center">
-<div class="lable-input d-flex gap-3 align-items-center">
-  <p class="fs-3 fw-bold d-none d-md-block">موجود در:</p>
-  <div class="button-group d-flex gap-5">
-    <button class="btn bg-primary text-light  px-3  shadow rounded-3 fs-3 fw-bold">خبرها</button>
-    <button class="btn shadow rounded-3 px-3 fs-3 fw-bold">مقاله ها</button>
-    <button class="btn shadow rounded-3 px-3 fs-3 fw-bold">ویدئوها</button>
+  <section class="cate container ">
+   <div class="row flex-column-reverse flex-md-row gap-4 justify-content-between">
+
+<div class="col-md-6 col-sm-8 col-12 justify-content-start lable-input d-flex gap-3 align-items-center">
+  <p class="fs-3 fw-bold text-start w-auto d-none d-md-block">موجود در:</p>
+  <div class="button-group d-flex w-75 justify-content-around  justify-content-md-start gap-5">
+    <button class="btn bg-primary text-light  shadow rounded-3 fs-4 text-nowrap fw-bold">خبرها</button>
+    <button class="btn shadow rounded-3  fs-4 text-nowrap fw-bold">مقاله ها</button>
+    <button class="btn shadow rounded-3  fs-4 text-nowrap fw-bold">ویدئوها</button>
   </div>
 </div>
-<div class="selection d-flex gap-1 align-items-center justify-content-between justify-content-md-end  ">
-<p class="fs-3 fw-bold w-50 ">
+
+<div class="col-sm-5 col-12 selection d-flex gap-1 align-items-end justify-content-between justify-content-md-end  ">
+<p class="fs-3 fw-bold w-50   text-start text-md-end m-0">
   ترتیب براساس:
 </p>
-<select class="form-select form-select-lg w-50 " aria-label="Default select example">
-  <option selected class="fs-4 fw-bold">جدیدترین</option>
+<select class="form-select form-select-lg bg-body-secondary fs-4 fw-bold w-50 " aria-label="Default select example">
+  <option selected class="fs-4 fw-bold ">جدیدترین</option>
   <option value="1" class="fs-4 fw-bold">پربازدیدترین</option>
   <option value="2" class="fs-4 fw-bold">قدیمی ترین</option>
    
 </select>
+</div>
+
 </div>
   </section>
 

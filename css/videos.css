@@ -1,5 +1,9 @@
 .itro-box {
-background: linear-gradient(360deg, rgba(255, 255, 255, 0.60) 0%, rgba(251, 251, 251, 0.00) 100%) !important;
+ background-color: red;
+ z-index: 1000;
+}
+.intro-box img{
+       object-position: center center;
 }
 .intro-box .title{
 position: absolute;
