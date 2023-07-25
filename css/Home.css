@@ -7,19 +7,18 @@
   --black-2: #000000;
 }
 
-.modal-content{
+.modal-content {
   border: none;
-border-bottom: 2px solid #fff ;
-margin-top: 20rem;
+  border-bottom: 2px solid #fff;
+  margin-top: 20rem;
 }
-.modal-content input::placeholder{
+.modal-content input::placeholder {
   /* color: #fff; */
 }
-#jobModal .modal-content input::placeholder{
+#jobModal .modal-content input::placeholder {
   color: #000000;
   text-align: start;
 }
-
 
 body {
   scroll-behavior: smooth;
@@ -232,12 +231,7 @@ body {
   left: 0px;
   top: 0px;
   border-radius: 3rem;
-  background: linear-gradient(
-    97.49deg,
-    #003d5c 1.28%,
-    #024d6d 49.93%,
-    #003d5c 106.23%
-  );
+  background: linear-gradient(97.49deg, #003d5c 1.28%, #024d6d 49.93%, #003d5c 106.23%);
   color: var(--white);
   text-align: center;
   font-family: "Aviny", sans-serif;
@@ -504,12 +498,7 @@ body {
 /* Contact us */
 .contact {
   height: 40rem;
-  background: linear-gradient(
-    97.49deg,
-    #003d5c 1.28%,
-    #024d6d 49.93%,
-    #003d5c 106.23%
-  );
+  background: linear-gradient(97.49deg, #003d5c 1.28%, #024d6d 49.93%, #003d5c 106.23%);
 
   border-radius: 24px;
 }
@@ -517,9 +506,8 @@ body {
   font-family: "Aviny";
   font-size: 4rem;
 }
-.contact .ques-box   {
+.contact .ques-box {
   background: rgba(1, 28, 41, 1);
-  
 }
 .contact .container {
   width: 50%;
@@ -543,12 +531,7 @@ body {
 }
 /* questionbar section */
 .questionbar {
-  background: linear-gradient(
-    97.49deg,
-    #003d5c 1.28%,
-    #024d6d 49.93%,
-    #003d5c 106.23%
-  );
+  background: linear-gradient(97.49deg, #003d5c 1.28%, #024d6d 49.93%, #003d5c 106.23%);
   margin: 10rem 0;
   border-radius: 24px;
 }
@@ -604,18 +587,31 @@ footer .social .home-btn img {
   margin-bottom: -2rem;
 }
 
-
-
-
 /* Modal Styles */
+.controler {
+  left: 2%;
+  top: 10%;
+  z-index: 100000;
+}
 
-
-
-
-
-
-
-
+.controler div .tag {
+  position: absolute;
+  display: none;
+}
+.controler div:hover > .bi {
+  color: var(--primey-blue);
+}
+.controler div > .tag {
+  transition: all 0.3s ease-in;
+  transform-origin: left top;
+  transform: translateY(-30%);
+ 
+}
+.controler div:hover > .tag {
+  display: block;
+  left: 120%;
+  top: 15%;
+}
 
 /* Media queries and breakepointes */
 /* devises  smaller than 768px  */
@@ -701,6 +697,11 @@ footer .social .home-btn img {
     top: 16%;
     right: 2%;
   }
+  .controler {
+  left: 50%;
+  top: 50%;
+  z-index: 100000;
+}
 }
 
 /* devises smaller than 576px */

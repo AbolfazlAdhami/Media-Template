@@ -1,9 +1,13 @@
-.itro-box {
- background-color: red;
+.intro-box {
+   
  z-index: 1000;
 }
 .intro-box img{
        object-position: center center;
+       z-index: 0;
+        
+       width: 100%;
+       height: 100%;
 }
 .intro-box .title{
 position: absolute;
