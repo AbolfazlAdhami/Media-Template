@@ -298,7 +298,77 @@
         <img src="./Asset/favorite.png" class="w-100" alt="" />
       </div>
     </div>
+    <!-- Footer -->
+    <footer class="container-fluid mt-5 py-5">
+      <div class="linkes w-100 row justify-content-between px-1 py-3">
+        <nav class="box1 col-5 col-md-3 fw-bold fs-4 d-flex justify-content-evenly flex-column flex-md-row align-items-start">
+          <ul>
+            <li class="my-2">
+              <h4 class="fw-bolder">لینک های مفید</h4>
+            </li>
+            <li class="my-2">
+              <a href="./index.html">صفحه اصلی</a>
+            </li>
+            <li class="my-2"><a href="./news.html">خبرها</a></li>
+            <li class="my-2"><a href="./videos.html">ویدیوها</a></li>
+          </ul>
+        </nav>
 
+        <nav class="box1 col-5 col-md-3 fw-bold fs-4 d-flex justify-content-evenly flex-column flex-md-row align-items-end me-2 me-sm-4 me-md-0 pe-md-0 pe-5">
+          <ul>
+            <li class="my-2" onclick="window.Location.href='./contact.html'">
+              <h4 class="fw-bolder">تماس با ما</h4>
+            </li>
+            <li class="my-2">
+              <a href="./contact.html">ایمیل</a>
+            </li>
+            <li class="my-2"><a href="">عنوان مثالی</a></li>
+            <li class="my-2"><a href="">عنوان مثالی</a></li>
+          </ul>
+        </nav>
+
+        <nav class="box2 col-5 col-md-3 fw-bold fs-4 d-flex justify-content-evenly flex-column flex-md-row align-items-start">
+          <ul class="me-5 me-md-0">
+            <li class="my-2">
+              <h4 class="fw-bolder" onclick="window.location.href='./aboutus.html'">درباره ما</h4>
+            </li>
+            <li class="my-2">
+              <a href="./aboutus.html">مدیا مهاجرت</a>
+            </li>
+            <li class="my-2"><a href="./news.html">خبرها</a></li>
+            <li class="my-2"><a href="./videos.html">ویدئوها</a></li>
+          </ul>
+        </nav>
+        <nav class="box2 col-5 col-md-3 fw-bold fs-4 d-flex justify-content-evenly flex-column flex-md-row align-items-end">
+          <ul>
+            <li class="my-2">
+              <h4 class="fw-bolder" onclick="window.location.href='./jobs.html'">همکاری با ما</h4>
+            </li>
+            <li class="my-2">
+              <a href="">همکاری و تبلیغات</a>
+            </li>
+            <li class="my-2"><a href="">کمک مالی </a></li>
+            <li class="my-2"><a href="./jobs.html">فرصت های شغلی</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="social d-flex flex-column flex-md-row justify-content-evenly justify-content-lg-around align-items-center w-100 h-50">
+        <p class="fs-3 fw-bold">ما را در صفحات اجتماعی دنبال کنید!</p>
+        <div class="social-icons d-flex gap-2">
+          <a class="p-2 rounded py-1 text-light fs-3 fw-bold text-center" href="">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a class="p-2 rounded py-1 text-light fs-3 fw-bold text-center" href="">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a class="p-2 rounded py-1 text-light fs-3 fw-bold text-center" href=""><i class="bi bi-facebook"></i></a>
+          <a class="p-2 rounded py-1 text-light fs-3 fw-bold text-center" href=""><i class="bi bi-telegram"></i></a>
+        </div>
+        <a href="#" class="home-btn p-2 rounded text-light">
+          <img src="./Asset/icons/Arrow.svg" alt="" />
+        </a>
+      </div>
+    </footer>
     <div class="text-light liesense">تمام حقوق مادی و معنوی این سایت متعلق به مدیا مهاجرت میباشد</div>
     <!-- Modal -->
     <div class="modal fade bg-transparent" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -378,7 +448,6 @@
       display: none;
       transform: translateX(100%);
       transition: all 0.5s ease;
-
     }
     #favorite {
       overflow: hidden;
@@ -392,12 +461,11 @@
       transform: translateX(0%);
       transition: all 1s ease;
     }
-    #bookmark.show   {
+    #bookmark.show {
       overflow: visible;
       display: flex;
       transform: translateX(0%);
       transition: all 1s ease;
-
     }
 
     html {

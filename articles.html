@@ -522,26 +522,24 @@
     <!-- Pagination componetns -->
     <div class="container mx-auto d-flex justify-content-center">
       <nav aria-label="Page navigation example">
-        <ul class="pagination gap-2 pagination-lg">
+        <ul class="pagination d-flex flex-row-reverse fs-4 fw-bold text-black gap-2 pagination-lg">
           <li class="page-item disabled mx-3">
-            <a href="" class="page-link">
-              <svg width="15" height="18" style="transform: rotate(180deg)" viewBox="0 0 15 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="#" class="page-link bg-white border-0 text-black">
+              <svg width="15" height="18" viewBox="0 0 15 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11.666 0L14.251 2.585L5.85437 11L14.251 19.415L11.666 22L0.666038 11L11.666 0Z" fill="#0F1010" />
               </svg>
             </a>
           </li>
-          <li class="page-item active rounded-3">
-            <a class="page-link rounded-3" href="#">1</a>
+          <li class="page-item active rounded-3"><a class="page-link border-0 text-black rounded-3" href="#">1</a></li>
+          <li class="page-item bg-white border-0" aria-current="page">
+            <span class="page-link bg-white border-0 text-black rounded-3">2</span>
           </li>
-          <li class="page-item" aria-current="page">
-            <span class="page-link rounded-3">2</span>
-          </li>
-          <li class="page-item">
-            <a class="page-link rounded-3" href="#">3</a>
-          </li>
+          <li class="page-item"><a class="page-link bg-white border-0 text-black rounded-3" href="#">3</a></li>
+          <li class="page-item"><a class="page-link bg-white border-0 text-black rounded-3" href="#">...</a></li>
+          <li class="page-item"><a class="page-link bg-white border-0 text-black rounded-3" href="#">24</a></li>
           <li class="page-item mx-3">
-            <a class="page-link rounded-3" href="#">
-              <svg width="15" height="18" viewBox="0 0 15 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="page-link text-black bg-white border-0 rounded-3" href="#">
+              <svg width="15" height="18" style="transform: rotate(180deg)" viewBox="0 0 15 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11.666 0L14.251 2.585L5.85437 11L14.251 19.415L11.666 22L0.666038 11L11.666 0Z" fill="#0F1010" />
               </svg>
             </a>
@@ -549,6 +547,78 @@
         </ul>
       </nav>
     </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid mt-5 py-5">
+      <div class="linkes w-100 row justify-content-between px-1 py-3">
+        <nav class="box1 col-5 col-md-3 fw-bold fs-4 d-flex justify-content-evenly flex-column flex-md-row align-items-start">
+          <ul>
+            <li class="my-2">
+              <h4 class="fw-bolder">لینک های مفید</h4>
+            </li>
+            <li class="my-2">
+              <a href="./index.html">صفحه اصلی</a>
+            </li>
+            <li class="my-2"><a href="./news.html">خبرها</a></li>
+            <li class="my-2"><a href="./videos.html">ویدیوها</a></li>
+          </ul>
+        </nav>
+
+        <nav class="box1 col-5 col-md-3 fw-bold fs-4 d-flex justify-content-evenly flex-column flex-md-row align-items-end me-2 me-sm-4 me-md-0 pe-md-0 pe-5">
+          <ul>
+            <li class="my-2" onclick="window.Location.href='./contact.html'">
+              <h4 class="fw-bolder">تماس با ما</h4>
+            </li>
+            <li class="my-2">
+              <a href="./contact.html">ایمیل</a>
+            </li>
+            <li class="my-2"><a href="">عنوان مثالی</a></li>
+            <li class="my-2"><a href="">عنوان مثالی</a></li>
+          </ul>
+        </nav>
+
+        <nav class="box2 col-5 col-md-3 fw-bold fs-4 d-flex justify-content-evenly flex-column flex-md-row align-items-start">
+          <ul class="me-5 me-md-0">
+            <li class="my-2">
+              <h4 class="fw-bolder" onclick="window.location.href='./aboutus.html'">درباره ما</h4>
+            </li>
+            <li class="my-2">
+              <a href="./aboutus.html">مدیا مهاجرت</a>
+            </li>
+            <li class="my-2"><a href="./news.html">خبرها</a></li>
+            <li class="my-2"><a href="./videos.html">ویدئوها</a></li>
+          </ul>
+        </nav>
+        <nav class="box2 col-5 col-md-3 fw-bold fs-4 d-flex justify-content-evenly flex-column flex-md-row align-items-end">
+          <ul>
+            <li class="my-2">
+              <h4 class="fw-bolder" onclick="window.location.href='./jobs.html'">همکاری با ما</h4>
+            </li>
+            <li class="my-2">
+              <a href="">همکاری و تبلیغات</a>
+            </li>
+            <li class="my-2"><a href="">کمک مالی </a></li>
+            <li class="my-2"><a href="./jobs.html">فرصت های شغلی</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="social d-flex flex-column flex-md-row justify-content-evenly justify-content-lg-around align-items-center w-100 h-50">
+        <p class="fs-3 fw-bold">ما را در صفحات اجتماعی دنبال کنید!</p>
+        <div class="social-icons d-flex gap-2">
+          <a class="p-2 rounded py-1 text-light fs-3 fw-bold text-center" href="">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a class="p-2 rounded py-1 text-light fs-3 fw-bold text-center" href="">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a class="p-2 rounded py-1 text-light fs-3 fw-bold text-center" href=""><i class="bi bi-facebook"></i></a>
+          <a class="p-2 rounded py-1 text-light fs-3 fw-bold text-center" href=""><i class="bi bi-telegram"></i></a>
+        </div>
+        <a href="#" class="home-btn p-2 rounded text-light">
+          <img src="./Asset/icons/Arrow.svg" alt="" />
+        </a>
+      </div>
+    </footer>
 
     <div class="text-light liesense">تمام حقوق مادی و معنوی این سایت متعلق به مدیا مهاجرت میباشد</div>
 
