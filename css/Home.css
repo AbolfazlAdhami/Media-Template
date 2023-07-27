@@ -605,12 +605,20 @@ footer .social .home-btn img {
   transition: all 0.3s ease-in;
   transform-origin: left top;
   transform: translateY(-30%);
- 
 }
 .controler div:hover > .tag {
   display: block;
   left: 120%;
   top: 15%;
+}
+
+/* Videos single page */
+.videos-player video{
+  width: 100%;
+  height: 50rem;
+}
+.video-desc--poster{
+  height: 35rem;
 }
 
 /* Media queries and breakepointes */
@@ -698,9 +706,16 @@ footer .social .home-btn img {
     right: 2%;
   }
   .controler {
-  left: 50%;
-  top: 50%;
-  z-index: 100000;
+    left: 50%;
+    top: 70%;
+    z-index: 100000;
+  }
+  .videos-player video{
+    width: 100%;
+    height: 40rem;
+  }
+.video-desc--poster{
+  height: 25rem;
 }
 }
 
@@ -746,7 +761,15 @@ footer .social .home-btn img {
   }
   .controler {
     left: 15%;
-    top: 50%;
+    top: 80%;
     z-index: 100000;
+  }
+  .videos-player video{
+    width: 100%;
+    height: 30rem;
+  }
+
+  .video-desc--poster{
+    height: 15rem;
   }
 }
